@@ -1,3 +1,3 @@
 # JoeApp
-Java Applications by Joe
+Java Applications by Joe.
 Free for private use
