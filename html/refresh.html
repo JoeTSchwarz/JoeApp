@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Webcam Viewer</title>
+    <meta name="viewport" content="width=device-width, height=device-height initial-scale=1">
+    <style>
+    img {
+      display: block;
+      margin: 5% auto;
+    }
+    </style>
+  </head>
+  <body>
+    <center>
+      <img id="imgID" src=src="http://"+document.location.host alt="centered image" height="480" width="640">
+    </center>
+    
+    <!-- with external JS with passing parameter: imgID -->
+    <script type="text/javascript">var imgID = "imgID";</script>
+    <script src="js/refresh.js" type="text/javascript"></script>
+    
+  </body>
+</html>

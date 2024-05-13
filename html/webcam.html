@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Webcam Streaming</title>
+    <style>
+    img {
+      display: block;
+      margin: 5% auto;
+    }
+    </style>
+  </head>
+  <body bgcolor="#404040">
+    <center>
+      <!-- Webcam with enlargement of original size -->
+      <img id="theimg" src="http://"+document.location.host alt="Erreur" height="480" width="640"/>
+    </center>  
+    <!-- Avoid flcker on reload by fooling caching -->
+    <script type="text/javascript">
+      var theimg = document.getElementById("theimg");
+      var theurl = "http://"+document.location.host;
+      setInterval(function() {
+          theimg.src = theurl;
+      }, 20);
+    </script>
+  </body>
+</html>
