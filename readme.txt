@@ -54,10 +54,8 @@ Installation:
 2) open a CMD window on this unzipped directory
 3) run build.bat 
 
-If your OS is LINUX (Ubuntu or Mint): on a Terminal of directory where webcam.zip is unzipped.
-1) rename build.sh.txt to build.sh
-2) make it executable chmod 777 build.sh
-3) run build.sh
+If your OS is LINUX (Ubuntu or Mint): on a Terminal of directory where webcam.zip is unzipped,
+then write a shell script similar to the build.bat, for example build.sh, and make sure that it is executable (chmod 777 build.sh)
 
 
 
