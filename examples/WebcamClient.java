@@ -74,7 +74,7 @@ public class WebcamClient extends Application {
     stage.setScene(scene);
     stage.sizeToScene();
     scene.getStylesheets().add("video.css");
-    stage.getIcons().add(new Image(WebcamClient.class.getResourceAsStream("Camcorder.png")));
+    stage.getIcons().add(new Image(WebcamClient.class.getResourceAsStream("icons/Camcorder.png")));
     stage.show();
     getHost();
 	}

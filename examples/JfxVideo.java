@@ -123,8 +123,8 @@ public class JfxVideo extends Application {
     //stage.setResizable(false);
     stage.setScene(scene);
     stage.sizeToScene();
-    scene.getStylesheets().add("video.css");
-    stage.getIcons().add(new Image(JfxVideo.class.getResourceAsStream("Camcorder.png")));
+    scene.getStylesheets().add("resources/video.css");
+    stage.getIcons().add(new Image(JfxVideo.class.getResourceAsStream("icons/Camcorder.png")));
     stage.show();
     try {
       video.show();
@@ -145,7 +145,7 @@ public class JfxVideo extends Application {
     dia.setTitle("ZOOM IN/OUT");
     dia.setHeaderText("Zooming factor");
     DialogPane dp = dia.getDialogPane();
-    dp.getStylesheets().add("video.css");
+    dp.getStylesheets().add("resources/video.css");
     dp.getButtonTypes().addAll(ButtonType.OK, ButtonType.CANCEL);
     dp.setContent(slider);
     dp.setPrefSize(420, 50);

@@ -25,7 +25,7 @@ public class WebcamServer extends JFrame {
     setTitle("WebcamServer");
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     setIconImage((new ImageIcon(javax.imageio.ImageIO.read(WebcamServer.class.
-                  getResourceAsStream("/theWeb.png")))).getImage());
+                  getResourceAsStream("icons/theWeb.png")))).getImage());
     
     //
     int wi = 256, he = 192;

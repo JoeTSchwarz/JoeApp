@@ -118,7 +118,7 @@ public class Webcamera extends Application {
       draw(cImg);
     });
     x0 = y0 = x1 = y1 = -1;
-    final Image icon = new Image(Webcamera.class.getResourceAsStream("/crop.png"));
+    final Image icon = new Image(Webcamera.class.getResourceAsStream("icons/crop.png"));
     Button crop = Utility.getButton(icon, "CROPPING");
     crop.setOnAction(a->{
       if (pause) {
@@ -129,7 +129,7 @@ public class Webcamera extends Application {
         flag = false;
         return;
       }
-      Image img = new Image(Webcamera.class.getResourceAsStream("/cropFocus.png")); 
+      Image img = new Image(Webcamera.class.getResourceAsStream("icons/cropFocus.png")); 
       crop.setGraphic(new ImageView((Image) img));
       if (image != null) {
         rot = 0;
@@ -144,9 +144,9 @@ public class Webcamera extends Application {
     });
     //
     MenuButton mButton = new MenuButton("Choice",
-                    new ImageView(new Image(Webcamera.class.getResourceAsStream("/cameraIcon.png"))));
+                    new ImageView(new Image(Webcamera.class.getResourceAsStream("icons/cameraIcon.png"))));
     MenuItem save = new MenuItem("SAVE", 
-                    new ImageView(new Image(Webcamera.class.getResourceAsStream("/save.png"))));
+                    new ImageView(new Image(Webcamera.class.getResourceAsStream("icons/save.png"))));
     save.setOnAction(a -> {
       String fName = Utility.getFile(dir);
       if (fName == null) {
@@ -191,7 +191,7 @@ public class Webcamera extends Application {
     scene.getStylesheets().add("video.css");
     // Background color for canvas
     stage.sizeToScene();
-    stage.getIcons().add(new Image(getClass().getResourceAsStream("/qrcIcon.png")));
+    stage.getIcons().add(new Image(getClass().getResourceAsStream("icons/qrcIcon.png")));
     stage.setResizable(false);
     stage.setScene(scene);
     stage.show();

@@ -28,7 +28,7 @@ public class SwingVideo extends JFrame {
     setTitle("SwingVideo");
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     setIconImage((new ImageIcon(ImageIO.read(SwingVideo.class.
-                  getResourceAsStream("/Camcorder.png")))).getImage());
+                  getResourceAsStream("icons/Camcorder.png")))).getImage());
 
     List<Device> dlist = WebcamCanvas.getVideoList();
     if (dlist.size() == 0) {
