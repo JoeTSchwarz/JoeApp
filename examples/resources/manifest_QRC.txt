@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Class-Path: joe.Webcam.jar bridj-0.7.0.jar core-3.2.1.jar zxing.jar zxing-javase.jar
+Created-By: 1.0.0 (Joe Schwarz)
+

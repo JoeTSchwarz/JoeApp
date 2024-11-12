@@ -1,4 +1,4 @@
 Manifest-Version: 1.0
 Created-By: 1.0.0 (Joe Schwarz)
 Class-Path: joe.Webcam.jar bridj-0.7.0.jar
-Main-Class: SwingVideo
+Main-Class: JfxVideo
