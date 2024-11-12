@@ -37,7 +37,8 @@ public class Webcam {
   @param device Device (i.e. camera), null will be the 1st device
   @param res Dimension, resolution width x height
   @exception Exception thrown by JAVA
-  */ 
+  */
+  @SuppressWarnings("deprecation")
   public Webcam(Device device, Dimension res) throws Exception {
     if (res == null || device == null) throw new Exception("Invalid D or device");
     if (!list.contains(device)) throw new Exception("Unknown Device: "+device.toString());
